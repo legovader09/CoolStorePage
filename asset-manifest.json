@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.905ce6c2.css",
-    "main.js": "/static/js/main.0fb6bed6.js",
-    "static/js/787.b701888c.chunk.js": "/static/js/787.b701888c.chunk.js",
-    "index.html": "/index.html",
-    "main.905ce6c2.css.map": "/static/css/main.905ce6c2.css.map",
-    "main.0fb6bed6.js.map": "/static/js/main.0fb6bed6.js.map",
-    "787.b701888c.chunk.js.map": "/static/js/787.b701888c.chunk.js.map"
+    "main.css": "/CoolStorePage/static/css/main.905ce6c2.css",
+    "main.js": "/CoolStorePage/static/js/main.0ca85243.js",
+    "static/js/787.b701888c.chunk.js": "/CoolStorePage/static/js/787.b701888c.chunk.js",
+    "index.html": "/CoolStorePage/index.html",
+    "main.905ce6c2.css.map": "/CoolStorePage/static/css/main.905ce6c2.css.map",
+    "main.0ca85243.js.map": "/CoolStorePage/static/js/main.0ca85243.js.map",
+    "787.b701888c.chunk.js.map": "/CoolStorePage/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.905ce6c2.css",
-    "static/js/main.0fb6bed6.js"
+    "static/js/main.0ca85243.js"
   ]
 }
