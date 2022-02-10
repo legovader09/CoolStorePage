@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Product from './Product';
 
-function App() {
+const App = (props) => {
+  const [data, setData] = useState(null);
+  console.log(data);
+
+  useEffect(() => {
+    fetch( props.endpoint )
+      .then(res => res.json())
+      .then(data => setData(data))
+      .catch(err => console.error(err));
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h1 className="h2">Cool Store Page</h1>
+        <p className="text-primary">Using the Fake Store API and Bootstrap</p>
       </header>
-    </div>
+      <main className="container">
+        <div className="row">
+          {data && data.map(item => (
+            <Product
+              key={item.id.toString()}
+              content={item}
+            />
+          ))}
+        </div>
+      </main>
+    </>
   );
 }
 
